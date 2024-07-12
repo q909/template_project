@@ -1,8 +1,8 @@
 {
-    "project_name": "project_name",
+    "project_name": "my_project",
     "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
     "module_name": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
-    "author_name": "Your name (or your organization/company/team)",
+    "author_name": "Oleg Valgaev",
     "description": "A short description of the project.",
     "python_version_number": "3.10",
     "dataset_storage": [
@@ -12,8 +12,8 @@
         {"gcs": {"bucket": "bucket-name"}}
     ],
     "environment_manager": [
-        "virtualenv",
         "conda",
+        "virtualenv",
         "pipenv",
         "none"
     ],
