@@ -23,11 +23,51 @@ pip install cookiecutter-data-science
 
 ## Starting a new project
 
-To start a new project, run:
+1. Create OneNote notebook from template
+2. Create MS Planner board
+3. Initialize code project from ccds template (Miniconda, cookiecutter)
+4. Init Git repo (git init)
+5. Connect git remote
+6. Enjoy!
+
+
+
+
+### OneNote
+    1. Open C:\Users\ValgaevO\OneDrive - AIT\Documents\OneNote Notebooks
+    2. Double click on "template_notebook"
+    3. Create new OneNote notebook from a template
+
+### Microsoft Planner
+    1. Create new ToDo plan
+    
+### Code
+    1. Open MINICONDA
+    2. Run: cd C:\Users\ValgaevO\Lokal documents\01_code\01_ait-projects
+    3. Initiate project with cookiecutter template from conda
+        a. Run: conda activate base
+            i. Check if cookiecutter package is installed: conda list
+            ii. If not installed: conda install cookiecutter 
+            iii. Alternative: conda install ccds
+        b. Init from a cookiecutter template from my github: ccds https://github.com/q909/template_project
+    4. Init GIT repo: VScode or git init
+    5. Create a remote repo online (GitHub or GitLab)
+    6. Add GIT remote: git remote add origin https://github.com/q909/my_test_repo
+    7. Publish branch and sync with remote
+
+
+
+
+
+To start a new project, cd to your folder and run in miniconda:
 
 ```bash
-ccds
+ccds https://github.com/q909/template_project
 ```
+
+
+
+
 
 ### The resulting directory structure
 
