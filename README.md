@@ -52,7 +52,7 @@ pip install cookiecutter-data-science
         b. Init from a cookiecutter template from my github: ccds https://github.com/q909/template_project
     4. Init GIT repo: VScode or git init
     5. Create a remote repo online (GitHub or GitLab)
-    6. Add GIT remote: git remote add origin https://github.com/q909/my_test_repo
+    6. Add GIT remote: git remote add origin https://github.com/q909/XXXXXXX or https://gitlab-intern.ait.ac.at/ValgaevO/XXXXXXXX
     7. Publish branch and sync with remote
 
 
