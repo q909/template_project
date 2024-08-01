@@ -3,6 +3,7 @@
     "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
     "module_name": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
     "author_name": "Oleg Valgaev",
+    "author_email": "oleg.valgaev@ait.ac.at",
     "description": "A short description of the project.",
     "python_version_number": "3.11",
     "project_version": "0.1.0",
