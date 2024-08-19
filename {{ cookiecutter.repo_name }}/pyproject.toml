@@ -41,9 +41,6 @@ readme =  "README.md"
 authors = ["{{cookiecutter.author_name}} <{{cookiecutter.author_email}}>"]
 license =  "{{ cookiecutter.open_source_license }}"
 
-[tool.poetry.config]
-virtualenvs.create = false
-
 
 [tool.poetry.dependencies]
 python = "^{{cookiecutter.python_version_number}}"

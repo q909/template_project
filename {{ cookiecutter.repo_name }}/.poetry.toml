@@ -1,0 +1,8 @@
+# This file contains poetry settings.
+# Alternative: 
+# Local settings for the project - run: poetry config virtualenvs.create false --local 
+# Global settings of POETRY - run: poetry config virtualenvs.create false
+# This assures that poetry uses the active conda enviroment rather than creating its own venv.
+
+[virtualenvs]
+create = false
