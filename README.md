@@ -6,6 +6,15 @@ _A logical, reasonably standardized but flexible project structure for doing and
 
 > ℹ️ Cookiecutter Data Science v2 has changed from v1. It now requires installing the new cookiecutter-data-science Python package, which extends the functionality of the [cookiecutter](https://cookiecutter.readthedocs.io/en/stable/README.html) templating utility. Use the provided `ccds` command-line program instead of `cookiecutter`.
 
+
+To start a new project, create CONDA enviroment, cd to your folder and run in miniconda:
+
+```bash
+ccds https://github.com/q909/template_project
+```
+
+
+
 ## Installation
 
 Cookiecutter Data Science v2 requires Python 3.8+. Since this is a cross-project utility application, we recommend installing it with [pipx](https://pypa.github.io/pipx/). Installation command options:
@@ -23,12 +32,15 @@ pip install cookiecutter-data-science
 
 ## Starting a new project
 
-1. Create OneNote notebook from template
+1. Create ONENOTE notebook from template
 2. Create MS Planner board
-3. Initialize code project from ccds template (Miniconda, cookiecutter)
-4. Init Git repo (git init)
-5. Connect git remote
-6. Enjoy!
+3. Create CONDA enviroment (CONDA)
+4. Init PROJECTDIR from template (CCDS: ccds https://github.com/q909/template_project)
+5. Init POETRY (poetry install in PROJECTDIR)
+6. Init GIT (git init)
+7. Connect GIT remote (git remote add origin)
+8. Code, commit, enjoy!
+
 
 
 
@@ -42,28 +54,37 @@ pip install cookiecutter-data-science
     1. Create new ToDo plan
     
 ### Code
-    1. Open MINICONDA
-    2. Run: cd C:\Users\ValgaevO\Lokal documents\01_code\01_ait-projects
-    3. Initiate project with cookiecutter template from conda
-        a. Run: conda activate base
-            i. Check if cookiecutter package is installed: conda list
-            ii. If not installed: conda install cookiecutter 
-            iii. Alternative: conda install ccds
-        b. Init from a cookiecutter template from my github: ccds https://github.com/q909/template_project
-    4. Init GIT repo: VScode or git init
-    5. Create a remote repo online (GitHub or GitLab)
-    6. Add GIT remote: git remote add origin https://github.com/q909/XXXXXXX or https://gitlab-intern.ait.ac.at/ValgaevO/XXXXXXXX
-    7. Publish branch and sync with remote
+	1. Open CONDA prompt (miniconda)
+	2. Create conda enviroments with any python versions required for the project 
+		a. conda env list
+		b. conda create  --name MYPROJECT-ENVIROMENT_py3-XX python==3.XX
+		c. conda activate MYPROJECT-ENVIROMENT_py3-XX
+	
+	3. Run: cd C:\Users\ValgaevO\Lokal documents\01_code\01_ait-projects
+	4. Initiate project with CCDS template: ccds https://github.com/q909/template_project
+	5. Run: cd MY_PROJECT_DIR
+	6. Create POETRY enviroment 
+		a. Init poetry enviroment (MINICONDA in cd MY_PROJECT_DIR):  poetry install
+		b. Add new required package to poetry toml: poetry add XXX
+	7. Open VSCode
+	8. Select MYPROJECT-ENVIROMENT_py3-XX CONDA enviroment in VSCode
+	9. Open and run notebook
+Copy .env file to the MY_PROJECT_DIR
 
 
+### GIT
+	1. Init GIT repo: 
+		a. VSCode 
+		b. git init (in PROJECTDIR)
+	2. Create a remote repo online (GitHub or GitLab)
+	3. Check .gitignore file
+	4. Add GIT remote: git remote add origin https://github.com/q909/XXXXXXX or https://gitlab-intern.ait.ac.at/ValgaevO/XXXXXXXX
+	5. Publish branch and sync with remote
+	6. Get the changes from the remote: git pull origin master
+	7. Commit: git commit -m "this is my first commit"
+Push the commits to the GitLab project: git push origin master (or git push --force origin master)
 
 
-
-To start a new project, cd to your folder and run in miniconda:
-
-```bash
-ccds https://github.com/q909/template_project
-```
 
 
 
