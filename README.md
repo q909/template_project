@@ -1,4 +1,12 @@
-# Cookiecutter Data Science
+# My Project Template
+To start a new project, create CONDA enviroment, cd to your folder and run in miniconda:
+
+```bash
+ccds https://github.com/q909/template_project
+```
+
+
+## Cookiecutter Data Science
 
 _A logical, reasonably standardized but flexible project structure for doing and sharing data science work._
 
@@ -7,11 +15,7 @@ _A logical, reasonably standardized but flexible project structure for doing and
 > ℹ️ Cookiecutter Data Science v2 has changed from v1. It now requires installing the new cookiecutter-data-science Python package, which extends the functionality of the [cookiecutter](https://cookiecutter.readthedocs.io/en/stable/README.html) templating utility. Use the provided `ccds` command-line program instead of `cookiecutter`.
 
 
-To start a new project, create CONDA enviroment, cd to your folder and run in miniconda:
 
-```bash
-ccds https://github.com/q909/template_project
-```
 
 
 
