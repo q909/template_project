@@ -1,16 +1,16 @@
 # My Project Template
 To start a new project, create CONDA enviroment, cd to your folder and run in MINICONDA:
-1. conda create -name <my-proj_py3-xx> python=3.XX
-2. conda activate <my-proj_py3-xx>
-2. cd <parent-dir>
+1. conda create -name [my-proj_py3-xx] python=3.XX
+2. conda activate [my-proj_py3-xx]
+2. cd [parent-dir]
 3. ccds https://github.com/q909/template_project
-4. cd <project-dir>
+4. cd [project-dir]
 5. poetry install
-6. Open <project-dir> in VSCode
+6. Open [project-dir] in VSCode
 
 Command that downloads the template:
 ```bash
-3. ccds https://github.com/q909/template_project
+ccds https://github.com/q909/template_project
 ```
 
 
